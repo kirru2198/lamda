@@ -4,6 +4,7 @@
 
 In this video, we dive into **AWS Lambda**, a powerful **serverless compute service**. We'll explore what makes Lambda unique, how it compares with **Amazon EC2** (Infrastructure as a Service) and **Elastic Beanstalk** (Platform as a Service), and when you might want to use each one. Ideal for beginners and developers looking to understand cloud-native architecture and simplify backend workloads.
 
+> In this video, we’ll learn about AWS Lambda, a tool that runs your code without needing to manage servers. We’ll see how it’s different from EC2 (where you manage the server) and Elastic Beanstalk (which helps manage apps). It’s perfect for beginners who want to understand cloud basics and build simpler backend systems.
 ---
 
 ## 🧠 What is AWS Lambda?
