@@ -17,6 +17,8 @@ A **typical legacy web application** is composed of three main components:
 2. **Backend** – Handles all the logic, operations, and connects the frontend to the database.
 3. **Database** – Stores all user and company data securely.
 
+<img width="420" alt="image" src="https://github.com/user-attachments/assets/6ffe21b3-d276-4a89-a97b-c8c7a3e8f59e" />
+
 ### 🔄 How it Works (Legacy Approach)
 
 - Users interact with the **frontend**.
