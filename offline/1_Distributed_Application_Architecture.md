@@ -81,9 +81,8 @@ The database server:
 
 Additional Benefit
 - If a user needs both the backend and database:
-- They can switch between them easily.
-
-Because both servers can communicate with each other.
+- They can switch between them easily. 
+- Because both servers can communicate with each other. ((Because even my backend server and database server contain information required to communicate with each other)
 
 ### ✅ Benefits of Distributed Architecture
 
