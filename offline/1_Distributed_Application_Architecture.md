@@ -57,6 +57,9 @@ In this architecture:
 - The **frontend communicates directly** with both the **backend** and the **database**, based on user needs.
 - Each component (frontend, backend, database) is **hosted on dedicated servers**.
 
+<img width="410" alt="image" src="https://github.com/user-attachments/assets/0a105e29-c8b8-456b-b4d4-307a9603389d" />
+
+
 ### ✅ Benefits of Distributed Architecture
 
 1. **Reduces Traffic Bottlenecks:**  
