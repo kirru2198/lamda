@@ -31,8 +31,6 @@ A **typical legacy web application** is composed of three main components:
 **Problem:**  
 If multiple users are trying to access different parts of the system (backend or database), they still need to go through the backend, creating potential traffic bottlenecks.
 
-<img width="401" alt="image" src="https://github.com/user-attachments/assets/8fc5b58e-bdf2-4d5e-8410-103def42853d" />
-
 
 ### ⚠️ Scenario: Bottleneck Example
 
@@ -49,6 +47,9 @@ The user trying to access the database must still go through the backend, and if
 ## 🌐 Distributed Application Architecture
 
 Now, let’s look at a **Distributed Application Architecture**, which solves these issues efficiently.
+
+<img width="401" alt="image" src="https://github.com/user-attachments/assets/8fc5b58e-bdf2-4d5e-8410-103def42853d" />
+
 
 ### 🔁 Key Difference
 
