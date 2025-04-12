@@ -135,7 +135,7 @@ In this video, we dive into **AWS Lambda**, a powerful **serverless compute serv
 > Think of it like a vending machine: you press a button, get a snack, and it resets, not remembering who you are or what you bought before.
 
 - **Elastic Beanstalk (Stateful)**:
-  - Can **store responses**
+  - Can **store responses** in it's database 
   - Maintains state over sessions or database
 
 > Elastic Beanstalk (Stateful) means:
