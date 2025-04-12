@@ -11,6 +11,18 @@ In this video, we’ll be learning about **AWS Elastic Beanstalk** – what it i
 **Elastic Beanstalk** is a **Platform as a Service (PaaS)** provided by AWS.  
 It allows you to **create**, **run**, and **manage** your applications **without managing the underlying infrastructure**.
 
+> In this context, "manage" means taking care of all the technical setup and maintenance that your app needs to run, such as:
+> - Setting up servers
+> - Installing software (like web servers or databases)
+> - Keeping everything updated and secure
+> - Handling traffic and scaling when users increase
+> - Monitoring performance or fixing errors
+
+> So, when we say:
+> - "It allows you to create, run, and manage your applications without managing the underlying infrastructure"
+> - It means you don’t have to worry about any of that technical backend stuff — AWS takes care of it for you. You just focus on writing and uploading your code.
+
+
 ### ✅ Key Points:
 - You can **directly upload your code**.
 - AWS Beanstalk will **automatically handle the deployment**.
