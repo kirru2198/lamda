@@ -56,8 +56,28 @@ Now, let’s look at a **Distributed Application Architecture**, which solves th
 In this architecture:
 - The **frontend communicates directly** with both the **backend** and the **database**, based on user needs.
 - Each component (frontend, backend, database) is **hosted on dedicated servers**.
+> Each service handles its own traffic independently.
+
+> For example:
+   > - If 80% of users are using the backend,
+   > - The other 20% can still access the database without any issues.
 
 <img width="410" alt="image" src="https://github.com/user-attachments/assets/0a105e29-c8b8-456b-b4d4-307a9603389d" />
+
+Why It Works Better
+This works because:
+- Each component (frontend, backend, database) runs on its own server.
+- These servers are dedicated, and traffic stays on the respective servers.
+
+The frontend server only manages:
+- The UI (user interface),
+- And routes users to the correct backend or database server.
+
+The backend server handles:
+- Processing, logic, and system operations.
+
+The database server:
+- Is only triggered when someone needs to access data.
 
 
 ### ✅ Benefits of Distributed Architecture
