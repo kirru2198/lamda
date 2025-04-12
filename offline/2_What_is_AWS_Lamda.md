@@ -1,72 +1,124 @@
-**Hello everyone and welcome to this video!**
+# 📹 **Video: Understanding AWS Lambda | Comparison with EC2 & Elastic Beanstalk**
 
-In this video, we’ll learn **what AWS Lambda is** and **how it’s different from other services**.
+## 📄 **Description**
 
----
-
-### What is AWS Lambda?
-
-**AWS Lambda** is a **serverless compute service**.  
-This means:
-- Your code runs **only when triggered by an event** (like a file uploaded to S3 or a message in a queue).
-- AWS automatically manages the **servers and infrastructure** for you.
-
-So, if a service sends a response, **Lambda can be triggered** to do a task — like sending a message or processing data.
-
-Lambda is usually used in the **backend** of applications.
+In this video, we dive into **AWS Lambda**, a powerful **serverless compute service**. We'll explore what makes Lambda unique, how it compares with **Amazon EC2** (Infrastructure as a Service) and **Elastic Beanstalk** (Platform as a Service), and when you might want to use each one. Ideal for beginners and developers looking to understand cloud-native architecture and simplify backend workloads.
 
 ---
 
-### What Does “Serverless” Mean?
+## 🧠 What is AWS Lambda?
 
-Lambda is called **serverless** because:
-- You **don’t need to set up or manage servers**.
-- It runs automatically when triggered.
+- **Lambda** is a **serverless compute service** provided by AWS.
+- Your code is triggered in **response to events**, and AWS manages the **underlying compute resources** for you.
 
-In contrast, **EC2** (Elastic Compute Cloud) is a **compute service that uses servers**.  
-With EC2, you set up everything — like operating systems, security, and software.
-
----
-
-### Lambda vs EC2
-
-| Feature | Lambda | EC2 |
-|--------|--------|-----|
-| Type | **Platform as a Service (PaaS)** | **Infrastructure as a Service (IaaS)** |
-| Server Management | Handled by AWS | Handled by you |
-| Setup | Just write code | Install OS, software, and manage setup |
-| Languages | Limited to supported ones | Any language, more flexibility |
-| Runtime | You choose the environment | You create the environment |
-| Flexibility | Less (focus on code) | More (choose OS, instance type, etc.) |
-| Use Case | Lightweight, event-driven tasks | Full control over infrastructure |
-
-With **Lambda**, you just choose a runtime (like Python), write your code, and AWS takes care of the rest.  
-With **EC2**, you have to do everything — install software, set up environments, and manage updates.
+### Example Use Case:
+- If a service (e.g. S3, Kinesis) sends an event or response → **Lambda is triggered** automatically.
+- This Lambda function can:
+  - Send messages
+  - Create queues
+  - Process files
+  - Trigger other services, etc.
 
 ---
 
-### Lambda vs Elastic Beanstalk
+## 🔧 What Does "Serverless" Mean?
 
-Both **Lambda** and **Elastic Beanstalk** let you focus on your **code**, not the infrastructure.
+- **Serverless** does **not** mean there are no servers.
+- It means **you don’t manage** the servers — AWS does it for you.
 
-But here’s how they differ:
+### Comparison:
+| EC2 | Lambda |
+|-----|--------|
+| Dedicated infrastructure | No infrastructure management |
+| You install OS, manage networking, scaling | AWS auto-manages it |
+| Full control | Focus only on code |
+
+---
+
+## ⚙️ Lambda vs EC2
+
+### EC2 (Elastic Compute Cloud)
+- **Infrastructure as a Service (IaaS)**
+- AWS provides virtualization; **you manage everything else**
+- You choose:
+  - OS
+  - Network settings
+  - Security patches
+  - Instances, storage, etc.
+
+### Lambda
+- **Platform as a Service (PaaS)**
+- You only write code — **AWS manages everything else**
+- Just select:
+  - **Runtime environment** (e.g. Python, Node.js)
+  - Upload your code
+- No need to install OS, libraries, or maintain servers
+
+---
+
+## 🚫 Limitations of Lambda
+
+- **Language Support is limited**:
+  - Only supports languages provided by AWS
+  - EC2 allows **any language or framework** (because you control the full server)
+- **Less customization**:
+  - You can’t choose the operating system or instance type
+- **Stateless**:
+  - Lambda doesn’t retain any data between executions
+
+---
+
+## ✅ Advantages of Lambda
+
+- Focus **only on code**
+- Automatic scaling
+- Cost-effective — you only pay for the compute time used
+- Easily integrate with:
+  - **S3**
+  - **Kinesis**
+  - **SNS/SQS**
+  - **API Gateway**, and many more
+
+---
+
+## 🌱 Lambda vs Elastic Beanstalk
+
+### Elastic Beanstalk
+- You **deploy and manage applications** without worrying about the underlying infrastructure
+- Slightly more control than Lambda
+- You can still:
+  - Choose EC2 instances
+  - Choose the type of database
+  - Customize environment variables and configurations
+
+### Key Differences
 
 | Feature | Lambda | Elastic Beanstalk |
 |--------|--------|-------------------|
-| Resource Selection | AWS chooses automatically | You choose (instances, DB, etc.) |
-| Flexibility | Less control | More control |
-| Stateless or Stateful | **Stateless** (doesn’t store data) | **Stateful** (can store and manage data) |
-| Best For | Short tasks triggered by events | Running full web apps or APIs |
-
-**Lambda** runs based on **workload** and scales automatically. You **don’t manage any servers or storage**.  
-**Elastic Beanstalk** gives you more control — you can choose the infrastructure, but AWS still helps manage it.
+| Server Management | No | Minimal |
+| Flexibility | Limited | More control |
+| Stateless/Stateful | Stateless | Stateful |
+| Resource Customization | AWS decides | You decide |
+| Ideal Use Case | Event-driven, microservices | Web apps with minimal infra management |
 
 ---
 
-### Key Takeaways
+## 🗃️ Stateless vs Stateful
 
-- **Lambda is great for simple, event-based tasks.**
-- You don’t manage infrastructure — just write and upload your code.
-- It’s **stateless** — it doesn't remember or store past data.
-- Compared to **EC2**, it’s simpler but less flexible.
-- Compared to **Elastic Beanstalk**, it gives less control but is quicker to set up for small functions.
+- **Lambda (Stateless)**:
+  - Doesn’t store data between executions
+  - No persistent connection
+- **Elastic Beanstalk (Stateful)**:
+  - Can **store responses**
+  - Maintains state over sessions or database
+
+---
+
+## 🎬 Conclusion
+
+AWS Lambda is a **powerful tool** for event-driven applications and when you want to **focus solely on code**. However, for full control over infrastructure or stateful applications, **EC2** or **Elastic Beanstalk** may be a better fit.
+
+---
+
+✅ **Thanks for watching!**  
+📌 Don’t forget to like, comment, and subscribe for more cloud computing content.
