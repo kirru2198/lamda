@@ -138,6 +138,13 @@ In this video, we dive into **AWS Lambda**, a powerful **serverless compute serv
   - Can **store responses**
   - Maintains state over sessions or database
 
+> Elastic Beanstalk (Stateful) means:
+> - It can remember things between user visits.
+> - It keeps data (like login info or settings) through sessions or by using a database.
+> - It’s like a personalized website that knows you when you come back.
+
+> Think of it like Netflix — it remembers what you watched and where you left off.
+
 ---
 
 ## 🎬 Conclusion
