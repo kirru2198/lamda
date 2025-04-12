@@ -75,8 +75,10 @@ In this architecture:
 ## 🏁 Summary
 
 Distributed application architecture:
-- Increases efficiency
-- Improves system availability
+- Increases efficiency (= Helps things work faster and better)
+  > Distributed application architecture helps things work faster and better by letting different parts of the app run separately.
+- Improves system availability (= Keeps the app working more of the time)
+  > It keeps the app working more of the time, even if one part has a problem.
 - Reduces latency and delays
 - Enhances the user experience
 
