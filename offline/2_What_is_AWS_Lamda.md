@@ -66,7 +66,25 @@ In this video, we dive into **AWS Lambda**, a powerful **serverless compute serv
   - You can’t choose the operating system or instance type
 - **Stateless**:
   - Lambda doesn’t retain any data between executions
+>
+### **What does Stateless mean in AWS Lambda?**
 
+**Stateless** means that **AWS Lambda doesn’t remember anything** from its previous runs. Every time the function is triggered, it starts like it’s running for the first time — with no memory of what happened before.
+
+---
+
+### **Example:**
+
+Imagine you have a Lambda function that counts how many people visited your website.
+
+- If it were **stateful**, it could remember:  
+  “Hey, 5 people already visited, now it's 6.”
+
+- But because Lambda is **stateless**, it doesn’t remember that “5” —  
+  it only sees the current visit and **forgets everything once it's done**.
+
+If you want it to remember past visits, you'd need to **store that info somewhere else**, like in a database (e.g. DynamoDB or S3).
+>
 ---
 
 ## ✅ Advantages of Lambda
