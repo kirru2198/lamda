@@ -3,6 +3,10 @@
 Hello everyone, and welcome to this video!  
 In this session, we’ll be diving into **Distributed Application Architecture** — what it is, how it saves us time, and why it’s more efficient compared to a traditional (legacy) web application.
 
+> In this session, we’ll learn about Distributed Application Architecture — a modern way of building apps where different parts (like the frontend, backend, and database) run on their own servers.
+
+> This setup makes the app faster, more reliable, and better at handling many users at once, compared to older (legacy) web applications where everything goes through one main server.
+
 ---
 
 ## 🧱 Legacy Web Application Architecture
