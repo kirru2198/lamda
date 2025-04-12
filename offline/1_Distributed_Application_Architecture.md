@@ -25,8 +25,14 @@ A **typical legacy web application** is composed of three main components:
 - The **frontend** communicates with the **backend**.
 - The **backend** fetches or sends data to the **database**.
 
+<img width="407" alt="image" src="https://github.com/user-attachments/assets/51a8e1da-9828-44c8-9457-0295c277fe79" />
+
+
 **Problem:**  
 If multiple users are trying to access different parts of the system (backend or database), they still need to go through the backend, creating potential traffic bottlenecks.
+
+<img width="401" alt="image" src="https://github.com/user-attachments/assets/8fc5b58e-bdf2-4d5e-8410-103def42853d" />
+
 
 ### ⚠️ Scenario: Bottleneck Example
 
