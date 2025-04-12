@@ -125,6 +125,15 @@ In this video, we dive into **AWS Lambda**, a powerful **serverless compute serv
 - **Lambda (Stateless)**:
   - Doesn’t store data between executions
   - No persistent connection
+
+> Lambda (Stateless) means:
+
+> - It doesn't remember anything from previous runs.
+> - Each time it runs, it starts fresh — like a clean slate.
+> - It doesn’t stay connected to anything after it finishes.
+
+> Think of it like a vending machine: you press a button, get a snack, and it resets, not remembering who you are or what you bought before.
+
 - **Elastic Beanstalk (Stateful)**:
   - Can **store responses**
   - Maintains state over sessions or database
