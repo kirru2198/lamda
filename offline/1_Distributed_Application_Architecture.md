@@ -79,6 +79,11 @@ The backend server handles:
 The database server:
 - Is only triggered when someone needs to access data.
 
+Additional Benefit
+- If a user needs both the backend and database:
+- They can switch between them easily.
+
+Because both servers can communicate with each other.
 
 ### ✅ Benefits of Distributed Architecture
 
