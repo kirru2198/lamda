@@ -44,6 +44,7 @@ Elastic Beanstalk supports **multiple programming languages and platforms**, inc
 - **Python with Corretto 8 and 11 (Amazon’s OpenJDK builds)**
 
 This flexibility makes it easier to work with your **preferred stack**.
+> This flexibility makes it easier to work with your preferred set of tools and programming language.
 
 ---
 
